@@ -30,22 +30,21 @@ public class Main {
 
         System.out.print("If you want to convert it, \nEnter '1' for Upper or '0' for Lower integer, please: ");
 
-        while (scanner.hasNextLine()) {
-            while (!scanner.hasNextInt()) {
-                System.out.print("Invalid Number!! \nEnter '1' for Upper or '0' for Lower integer, please: ");
-                scanner.next();
-            }
-            int UpDownNum = Integer.parseInt(scanner.next());
-            switch (UpDownNum) {
-                case 1:
-                    System.out.println("Upper integer is: " + Math.ceil(decimalNum));
-                    break;
-                case 0:
-                    System.out.println("Lower integer is: " + Math.floor(decimalNum));
-                    break;
-                default:
-                    System.out.print("Invalid Number!! \nEnter '1' for Upper or '0' for Lower integer please: ");
-            }
+        while (!scanner.hasNextInt()) {
+            System.out.print("Invalid Number!! \nEnter '1' for Upper or '0' for Lower integer, please: ");
+            scanner.next();
         }
+        int UpDownNum = Integer.parseInt(scanner.next());
+        switch (UpDownNum) {
+            case 1:
+                System.out.println("Upper integer is: " + Math.ceil(decimalNum));
+                break;
+            case 0:
+                System.out.println("Lower integer is: " + Math.floor(decimalNum));
+                break;
+            default:
+                System.out.print("Invalid Number!! \nEnter '1' for Upper or '0' for Lower integer please: ");
+        }
+        scanner.close();
     }
 }
