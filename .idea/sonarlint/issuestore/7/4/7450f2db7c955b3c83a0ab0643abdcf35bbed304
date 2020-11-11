@@ -1,0 +1,12 @@
+
+L
+java:S1068
+"*Remove this unused "dbName" private field.(‚™šôøÿÿÿÿ8àÏİ²Û.
+K
+java:S1068".Remove this unused "portNumber" private field.(ÎÜŠ8³Üß²Û.
+X	java:S125"<This block of commented-out lines of code should be removed.(öö²Õ8ÂÄ¦´Û.
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(×ÈŠÕ8§ä¥´Û.
+K
+java:S1068".Remove this unused "serverName" private field.(ÙÄ‰•8ÖßŞ²Û.
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(öÚŸ´úÿÿÿÿ8÷úÄ²Û.
